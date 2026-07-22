@@ -29,34 +29,29 @@ Traditional numerical approaches such as finite difference or finite element met
 
 ## Mathematical Model
 
-The drug concentration inside the spheroid satisfies the transient reaction-diffusion equation:
+The transient reaction-diffusion equation governing drug concentration is
 
-\[
-\frac{\partial C}{\partial t}=D\nabla^2C-K
-\]
+```text
+∂C/∂t = D∇²C − K
+```
 
 where
 
+- **C(x, y, t)** = Drug concentration
 - **D** = Diffusion coefficient
 - **K** = Constant metabolic sink term
-- **C(x,y,t)** = Drug concentration
 
 Boundary condition:
 
-\[
-C(x,y,t)=C_0
-\]
-
-on the spheroid boundary.
+```text
+C(x, y, t) = C₀    on the spheroid boundary
+```
 
 Initial condition:
 
-\[
-C(x,y,0)=0
-\]
-
-throughout the domain. :contentReference[oaicite:1]{index=1}
-
+```text
+C(x, y, 0) = 0     throughout the spheroid
+```
 ---
 
 ## Neural Network Architecture
